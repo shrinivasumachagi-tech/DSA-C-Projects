@@ -1,7 +1,7 @@
 #include "stack.h"
 
 /* Function for print the data's in the stack */
-int Peep(Stack_t s)
+void Peep(Stack_t s)
 {
 	/* Checking the Stack is empty or not */
 	if (s.top == -1)
@@ -12,9 +12,9 @@ int Peep(Stack_t s)
     {
 	    /* Declaring the temp for store the top value to print the values in the Stack*/
 	    printf("Top -> ");
-	    while (s.top > -1)
+	    while (s.top != -1)
 	    {
-		    printf("%d ", s -> stack[(s.top)--]);
+		    printf("%d ", s . stack[(s.top)--]);
 	    }
 	    printf("\n");
     }

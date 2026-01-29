@@ -2,7 +2,10 @@
 
 int create_stack(Stack_t *stk, int size)
 {
-
+    stk->capacity = size;
+    stk->top =-1;
+    stk->stack = malloc(sizeof(int)*size);
+    return SUCCESS;
 }
 
 
